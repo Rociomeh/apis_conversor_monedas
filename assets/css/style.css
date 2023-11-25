@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgba(1, 4, 15, 0.847);
+    color: white;
+    min-height: 100vh;
+}
+
+.conversor-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background-color:gray;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    width: 30%;
+    background-color: rgb(44, 193, 213) ;
+    color: white;
+    border-radius: 4px;
+}
