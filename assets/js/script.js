@@ -32,9 +32,8 @@ async function BuscarMoneda() {
     const chartDOM = document.getElementById("myChart");
     grafico = new Chart(chartDOM, config);
     const valorIngresado = Number(document.getElementById('cantidad').value);
-    const resultado =  Number(valorMoneda * valorIngresado);
-    console.log("resultado : " ,resultado);
-
+    const resultado = Number((valorIngresado / valorMoneda).toFixed(2));
+    console.log("Resultado : " ,resultado);
     document.getElementById("resultado").innerHTML = resultado;
   } catch (error) {
     console.error("Error al obtener datos de la moneda:", error);
